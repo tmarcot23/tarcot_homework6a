@@ -656,7 +656,7 @@ label {
     padding: 8px 12px;
     border-radius: 70px;
     color: black;
-    margin: 0px 12px;
+    margin: 0px 14px;
 }
 
 .single input[type="radio"]:not(:checked) + label {
@@ -664,7 +664,7 @@ label {
     padding: 8px 12px;
     border-radius: 70px;
     color: black;
-    margin: 0px 12px;
+    margin: 0px 14px;
 }
 
 .double input[type="radio"]:checked + label {
@@ -672,7 +672,7 @@ label {
     padding: 8px 8px;
     border-radius: 70px;
     color: black;
-    margin: 0px 12px;
+    margin: 0px 14px;
 }
 
 .double input[type="radio"]:not(:checked) + label {
@@ -680,7 +680,7 @@ label {
     padding: 8px 8px;
     border-radius: 70px;
     color: black;
-    margin: 0px 12px;
+    margin: 0px 14px;
 }
 
 /*#regForm fieldset:not(:first-of-type) {
