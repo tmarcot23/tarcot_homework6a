@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HealthConnect Homepage</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <!--HealthConnect logo!-->
+    <h1 class="pagelogo"><a  href="./homepage.html">HealthConnect</a></h1>
+    <div class="cmupicture">
+        <img src="cuccropped.jpg" alt="Picture of CMU's Cohon University Center"/>
+    </div>
+    <!--navigation bar!-->
+    <!--source: https://www.codecademy.com/courses/learn-css/lessons/css-typography/exercises/review!-->
+    <div>
+        <nav class='navbar'>
+            <ul>
+                <li><a href='#top'>Schedule Appointment</a></li>
+                <li><a  href="./upcomingappointments.html">Appointments</a></li>
+                <li><a  href='#sans'>Vaccination History</a></li>
+                <li><a  href='#mono'>Account</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!--split screen!-->
+    <!--source: https://www.w3schools.com/howto/howto_css_split_screen.asp!-->
+    <div class="split left">
+        <div class="homepageupcomingappointments">
+            <h2>Upcoming Appointments</h2>
+        </div>
+        <div class="homepageheading homepagecovidtest">
+            <h3>Covid Test</h3>
+        </div>
+        <div class="homepagedetails homepagecovidtestdetails">
+            <h4>02/09/2022</h4>
+            <h4>9:00 AM</h4>
+            <h4>@ TCS Hall</h4>
+            <!--source for arrow: https://www.toptal.com/designers/htmlarrows/!-->
+            <p><a href="appointmentdetails.html">&#8594</a></p>
+        </div>
+        <div class="homepageheading homepagevaccination">
+            <h3>Vaccination</h3>
+        </div>
+        <div class="homepagedetails homepagevaccinationdetails">
+            <h4>02/21/2022</h4>
+            <h4>4:30 PM</h4>
+            <h4>@ TCS Hall</h4>
+            <!--source for arrow: https://www.toptal.com/designers/htmlarrows/!-->
+            <p>&#8594</p>
+        </div>
+    </div>
+    <div class="split right">
+        <div class="quickscheduler">
+            <h2>Quick Scheduler</h2>
+        </div>
+        <div class="quickschedulerpickappointmenttype">
+            <h3>Please pick an appointment type:</h3>
+        </div>
+        <div class="quickschedulerappointmenttypes">
+            <input type="radio" id="homepagecovidbutton" name="homepagebuttons" value= "COVID Test">
+            <label for="homepagecovidbutton">COVID Test</label>
+            <input type="radio" id="homepagevaccinationbutton" name="homepagebuttons" value="Vaccination">
+            <label for="homepagevaccinationbutton">Vaccination</label>
+        </div>
+    </div>
+</body>
