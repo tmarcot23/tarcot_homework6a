@@ -465,6 +465,8 @@ label {
   text-decoration: none;
 }
 
+/*IGNORE FOR NOW*/
+
 /*#progressbar {
   margin-top: 20px;
   margin-bottom: -60px;
@@ -517,6 +519,9 @@ label {
   color: white;
 }*/
 
+
+/* Appointment Scheduling Page*/
+
 .regschedulerappointmenttypes {
   margin-bottom: 50px;
 }
@@ -560,7 +565,6 @@ label {
   margin-top: -13px;
 }
 
-/* Month list */
 .month ul {
   margin: 0;
   padding: 0;
@@ -600,7 +604,6 @@ label {
   font-weight: bold;
 }
 
-/* Days (1-31) */
 .days {
   padding: 10px 0;
   background: #F4F4F4;
@@ -620,7 +623,6 @@ label {
   font-family: 'Open Sans', sans-serif;
 }
 
-/* Highlight the "current" day */
 .days li .active {
   padding: 8px 12px;
   border-radius: 70px;
@@ -682,6 +684,8 @@ label {
     color: black;
     margin: 0px 14px;
 }
+
+/* IGNORE FOR NOW*/
 
 /*#regForm fieldset:not(:first-of-type) {
   display: none;
