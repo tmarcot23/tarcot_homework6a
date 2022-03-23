@@ -19,14 +19,14 @@
         </nav>
     </div>
     <form id="form" action="/Users/tiame/tarcot_pui_hw5_spring_2022/puihw5/appointmentdetails.html">
-        <!--<ul id="progressbar">
+        <!-- IGNORE FOR NOW <ul id="progressbar">
             <li class="active">Appointment<br>Type</li>
             <li>Appointment<br>Date and Time</li>
             <li>Review and<br>Confirm Details</li>
         </ul>!-->
         <div class="tab">
             <div class="regschedulerpickappointmenttype">
-                <h3>Please pick an appointment type:</h3>
+                <h3>1. Select an appointment type:</h3>
             </div>
             <div class="regschedulerappointmenttypes">
                 <input type="radio" id="regschedulercovidbutton" name="schedulerbuttons" onclick="checkTypeButton()" value= "COVID Test" required>
@@ -38,7 +38,7 @@
         <hr size="3" width="100%" color="666666">
         <div class="tab">
             <div class="leftcalendar">
-            <h3>Please pick a date:</h3>
+            <h3>2. Select a date:</h3>
                 <div class="month">
                     <ul>
                         <li class="next">&#10095;</li>
@@ -108,7 +108,7 @@
                 </ul>
             </div>
             <div class="righttimes">
-            <h3>Please pick a time:</h3>
+            <h3>3. Select a time:</h3>
                 <div class="times">
                     <div class="am">
                         <input type="radio" id="800" name="selectiontime" onclick="checkTimeButton()" value= "8:00 AM" required>
@@ -136,7 +136,7 @@
             </div>
         </div>
         <hr size="3" width="100%" color="666666">
-        <!--<div style="overflow:auto;">
+        <!-- IGNORE FOR NOW <div style="overflow:auto;">
             <div class="actionbuttons">
                 <button type="button" id="backbutton" class="back actionbutton" onclick="nextPrev(-1)">Back</button>
                 <button type="button" id="continuebutton" class="continue actionbutton" onclick="nextPrev(1)">Continue</button>
@@ -144,7 +144,7 @@
         </div>!-->
         <div class="tab">
             <div class="reviewheading">
-                 <h3>Review appointment details:</h3>
+                 <h3>4. Review appointment details:</h3>
             </div>
             <div class="review">
                 <div class="category type">
