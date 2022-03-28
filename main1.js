@@ -17,6 +17,7 @@ function checkDateButton() {
     }
     else if((getSelectedValue != null) && (checkTypeButton() == false)) {
       alert("Please select an appointment type")
+      getSelectedValue.checked = false;
     }
     else {
       return false
@@ -31,20 +32,58 @@ function checkTimeButton() {
     }
     else if((getSelectedValue != null) && (checkDateButton() == false) && (checkTypeButton()==true)) {
       alert("Please select a date")
+      getSelectedValue.checked = false;
     }
     else if((getSelectedValue != null) && (checkDateButton() == false) && (checkTypeButton()==false)) {
       alert("Please select an appointment type and date")
+      getSelectedValue.checked = false;
     }
     else {
       return false
     }
 }
 
+appointments = []
+var appointmentsLocal = JSON.parse(localStorage.getItem('appointments'));
+console.log(appointmentsLocal);
+appointments = appointmentsLocal;
+
+/*if (appointmentsLocal > 0) {
+  appointments = appointmentsLocal;
+}*/
+
 function formValidation() {
   if((checkTypeButton()==false) || (checkDateButton()==false)  || (checkTimeButton()==false)) {
     alert("Please fill out all fields");
   }
+  else {
+    let appointment = {
+      type: document.querySelector('input[name="schedulerbuttons"]:checked').value,
+      date: document.querySelector('input[name="selectiondate"]:checked').value,
+      time: document.querySelector('input[name="selectiontime"]:checked').value
+    }
+    appointments.push(appointmentLocal);
+    localStorage.setItem('appointments', JSON.stringify(appointments));
+  }
 }
+
+
+/*function makeAppointment(type, date, time) {
+  this.type = type;
+  this.date = date;
+  this.time = time;
+}*/
+
+
+/*function createAppointment(type, date, time) {
+  this.type = type
+  this.date = date
+  this.time = time
+}
+
+   var appointment = new createAppointment(document.querySelector('input[name="schedulerbuttons"]:checked').value,
+                                           document.querySelector('input[name="selectiondate"]:checked').value,
+                                            document.querySelector('input[name="selectiontime"]:checked').value)
 
 /*IGNORE FOR NOW: working on the code
 

@@ -320,29 +320,34 @@ label {
   color: black;
 }
 
-.appointmentcollapsed {
+#allAppointments {
+  margin-top: 20px;
+}
+
+.singleAppointment {
   color: white;
   margin: auto;
   background: #bb0000;
   width: 75%;
   font-size: 18px;
   margin-top: 20px;
+  margin-bottom: 30px;
 }
 
-.appointmentcollapsed i {
+.singleAppointment i {
   display: inline-block;
   margin-left: 20px;
   margin-right: 5px;
 }
 
-.appointmentcollapsed h4 {
+.singleAppointment h4 {
   font-family: 'Open Sans', sans-serif;
   display: inline-block;
   color: white;
   margin-right: 30px;
 }
 
-.downarrow i {
+.downArrow i {
   float: right;
   margin-top: -40px;
   margin-right: 20px;
